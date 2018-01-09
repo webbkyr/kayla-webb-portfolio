@@ -4,7 +4,23 @@
 
 body {
   font-family: Verdana, Geneva, sans-serif;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .main-container {
@@ -14,7 +30,18 @@ body {
 
 .header-info {
   display: flex;
+  background-color: #161D6E;
   border: 1px solid black;
+}
+
+.main-nav-ul {
+  padding: 0;
+  display: flex;
+}
+
+.main-nav-link > a {
+  padding: 10px;
+  color: #E9D2B3;
 }
 
 
