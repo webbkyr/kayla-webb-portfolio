@@ -1,3 +1,29 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  margin-top: 0;
+}
+
+.main-container {
+  max-width: 1600px;
+  line-height: 1.5;
+}
+
+.header-info {
+  display: flex;
+  border: 1px solid black;
+}
+
+
+
+
+
+/* 
+.bigslide {
+  background-image: url('http://lorempixel.com/g/500/500/');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
