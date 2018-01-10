@@ -12,6 +12,14 @@ function smoothScroll() {
   });
 }
 
+function newTabForLinks() {
+  if (!$('a[href^="mailto:')) {
+    $('a').attr('target', '_blank').attr('title', 'Link will open in a new window');
+  }
+
+}
+
 $(document).ready(() => {
   smoothScroll();
+  newTabForLinks();
 });
