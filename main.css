@@ -57,6 +57,17 @@ header {
   width: 100%;
 }
 
+.contact {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-link > a {
+  padding: 10px;
+}
+
 .main-nav-ul {
   margin: 0;
   padding: 0;
@@ -80,19 +91,19 @@ line-height: 40px;
   padding-top: 10px;
 }
 
-.intro-text {
+.intro-container {
   height: 600px;
   text-align: center;
   background: url('./images/michael-271900.jpg') center no-repeat;
   background-size: cover;
   color: #E9D2B3;
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
 }
 
-.intro-container {
-  margin-top: 80px;
-  margin-left: 10px;
+.intro-text {
+  /* margin-top: 80px;
+  margin-left: 10px; */
 
 }
 
@@ -101,8 +112,7 @@ line-height: 40px;
 }
 
 .contact-container {
-  display: flex;
-  justify-content: flex-end;
+
 }
 
 .contact {
