@@ -11,7 +11,7 @@
     <body>
         <main class='main-container'>
             <header>
-                <nav class="top-nav">
+                <nav class="top-nav" id='top-nav'>
                     <ul class='main-nav-ul'>
                         <li class="main-nav-link"><a href="#bio-section">Bio</a></li>
                         <li class="main-nav-link"><a href="#projects">Projects</a></li>
@@ -34,11 +34,11 @@
             </section>
             <section class='bio-section col' id='bio-section'>
                 <h3 class='bio-title'>Bio</h3>
-                <img class="headshot" src="./images/DSC_0567.JPG"
+                <img class="headshot headshot-large-screen" src="./images/DSC_0567.JPG"
                     alt="Smiling Kayla in Hawaii">
-                <div class='bio-text-container'>
+                <div class='bio-text-container bio-text-large'>
                     <p class="bio-text" id="bio-text">
-                            Hello! My name is Kayla. I’m a software developer who likes to build cool, <strong>responsive web applications</strong> using HTML5, CSS3, Javascript and NodeJS. I learned the MERN stack as a student in Thinkfu's Engineering Immersion program, but <strong>I’m willing and excited to explore other technologies!</strong> <br/>
+                            Hello! My name is Kayla. I’m a software developer who likes to build cool, <strong>responsive web applications</strong> using HTML5, CSS3, Javascript and NodeJS. I learned the MERN stack as a student in Thinkful's Engineering Immersion program, but <strong>I’m willing and excited to explore other technologies!</strong> <br/>
 
                             Before I was a developer, I worked in the federal legislative policy sphere. <strong>I caught the tech bug as a data analyst</strong>, where I collaborated with a team of analysts managing congressional and lobbying data. Writing SQL queries was my first taste of coding and I knew I wanted more. In my spare time, I train in the olympic lifts and compete in functional fitness competitions.
                     </p>
@@ -47,15 +47,15 @@
             <section class="projects col" id="projects">
                 <h3 class='projects-title'>Projects</h3>
                 <section class="project">
-                    <h3>Project 1</h3>
-                    <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=1"
-                        alt="Frobnicator screenshot">
-                    <p class="project-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec viverra ex.
+                    <h3>quick concert</h3>
+                    <img class="concert-image" src="./images/quickconcert_mock.png"
+                        alt="quick concert app landing page">
+                    <p class="concert-description">
+                            An event-driven platform that allow users to search for concerts by their city, which are scheduled to take place the day-of, up until the next day. Organize a group of friends quickly by using the app's 'Share this Event' feature to say if you're attending the concert!
                     </p>
                     <ul class="project-stack">
                         <li class="project-stack-item">
-                            React
+                            ReactJS
                         </li>
                         <li class="project-stack-item">
                             Redux
@@ -63,14 +63,17 @@
                         <li class="project-stack-item">
                             Node.js
                         </li>
+                        <li class="project-stack-item">
+                            MongoDB/Mongoose
+                        </li>
                     </ul>
                     <nav class="project-links">
                         <ul>
                             <li class="project-link project-link-live">
-                                <a href="#">Live demo</a>
+                                <a href="#">Demo</a>
                             </li>
                             <li class="project-link project-link-github">
-                                <a href="#">Source code</a>
+                                <a href="#">GitHub</a>
                             </li>
                         </ul>
                     </nav>
@@ -96,10 +99,10 @@
                     <nav class="project-links">
                         <ul>
                             <li class="project-link project-link-live">
-                                <a href="#">Live demo</a>
+                                <a href="#">Demo</a>
                             </li>
                             <li class="project-link project-link-github">
-                                <a href="#">Source code</a>
+                                <a href="#">GitHub</a>
                             </li>
                         </ul>
                     </nav>
@@ -125,10 +128,10 @@
                     <nav class="project-links">
                         <ul>
                             <li class="project-link project-link-live">
-                                <a href="#">Live demo</a>
+                                <a href="#">Demo</a>
                             </li>
                             <li class="project-link project-link-github">
-                                <a href="#">Source code</a>
+                                <a href="#">GitHub</a>
                             </li>
                         </ul>
                     </nav>
@@ -154,28 +157,27 @@
                     <nav class="project-links">
                         <ul>
                             <li class="project-link project-link-live">
-                                <a href="#">Live demo</a>
+                                <a href="#">Demo</a>
                             </li>
                             <li class="project-link project-link-github">
-                                <a href="#">Source code</a>
+                                <a href="#">GitHub</a>
                             </li>
                         </ul>
                     </nav>
                 </section>
             </section>
-            <!-- <section class="contact" id="contact">
-                <h2>Contact me</h2>
-                <form action="https://formspree.io/jrandomhacker@example.com"
-                    method="POST">
-                    <label for="contact-form-name">Your Name</label>
-                    <input type="text" name="name" id="contact-form-name" placeholder="Grace Hopper">
-                    <label for="contact-form-email">Your Email Address</label>
-                    <input type="email" name="_replyto" id="contact-form-email" placeholder="grace@example.com">
-                    <label for="contact-form-message">Message</label>
-                    <textarea name="message" id="contact-form-message"></textarea>
-                    <input type="submit" value="Send message">
-                </form> 
-            </section> -->
+            <section class='interests-section col' id='interests-section'>
+                    <h3 class='interests-title'>Interests</h3>
+                    <img class="lifting-image" src="./images/IMG_6884.JPG"
+                        alt="Kayla snatching in fitness competition">
+                    <img class='spartan-image' src='./images/FDC1EE76-F416-4744-9C60-2C34D36F013F.jpg' alt='Kayla competing in a Spartan race'>
+                    <div class='interests-text-container'>
+                        <p class="interests-text" id="bio-text">
+                         <a href="#top-nav">Back to top</a>
+
+                        </p>
+                    </div>
+                </section>
         </main>
 
         </body>

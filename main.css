@@ -176,19 +176,19 @@ line-height: 40px;
   background-color: #DEF3F6;
 }
 
-.bio-title, .projects-title {
+.bio-title, .projects-title, .interests-title {
   font-size: calc(50px + 2vw);
   color: #2F437C;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.bio-section, .projects {
+.bio-section, .projects, .interests-section {
   text-align: center;
 
 }
 
-.headshot {
+.headshot, .concert-image, .lifting-image, .spartan-image {
   /* border: 1px solid #9BB4DA; */
   border-radius: 8px;
   max-width: 100%;
@@ -202,7 +202,7 @@ line-height: 40px;
   max-width: 400px;
 }
 
-#bio-text {
+#bio-text, .concert-description {
   /* border: 1px solid black; */
   color: #2F437C;
   line-height: 1.5;
@@ -212,6 +212,15 @@ line-height: 40px;
 
 .projects {
 }
+
+.interests-title {
+  color: #E9D2B3;
+}
+
+.interests-section {
+  background-color: #1D2336;
+}
+
 
 
 /* //use min width to let larger screen css kick in */
@@ -227,4 +236,21 @@ line-height: 40px;
     text-align: center;
   }
   
+}
+
+@media screen and (min-width: 700px) {
+  .headshot-large-screen {
+    width: 50%;
+    float: left;
+
+  }
+
+  .bio-text-large {
+    width: 50%;
+    float: left;
+  }
+/* //clear both is in the next elemet; overfloew - we want just the parent affected by the floats, encloses the floating element so the next element doesnt consider this */
+  .bio-section {
+    overflow: hidden;
+  }
 }
