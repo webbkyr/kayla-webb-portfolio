@@ -37,7 +37,7 @@ header {
   padding: 0;
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .main-container {
@@ -46,8 +46,8 @@ header {
 
 .header-info {
   display: flex;
-  background-color: #161D6E;
-  border: 1px solid black;
+  background-color: #1160AA;
+  /* border: 1px solid black; */
 }
 
 .main-nav-ul {
@@ -68,12 +68,31 @@ header {
 .intro-text {
   height: 600px;
   text-align: center;
-  background: url('./images/ian-roseboro-384133.jpg') center no-repeat;
+  background: url('./images/michael-271900.jpg') center no-repeat;
   background-size: cover;
+  color: #E9D2B3;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.intro-container {
+  margin-top: 80px;
+  margin-left: 10px;
 }
 
 .bio-section, .work {
   text-align: center;
 }
 
+.contact-container {
+  /* background-color: #9BB4DA; */
+}
 
+#bio-section {
+  /* background-color: #161D6E; */
+}    
+
+.headshot {
+  border: 1px solid #9BB4DA;
+
+}
