@@ -192,7 +192,7 @@ line-height: 40px;
 
 }
 
-.headshot, .concert-image, .lifting-image, .spartan-image {
+.headshot, .concert-image, .nutrition-create, .lifting-image, .spartan-image {
   border-radius: 8px;
   max-width: 100%;
   padding: 10px;
@@ -207,7 +207,7 @@ line-height: 40px;
   border: 2px solid #11555E;
 }
 
-#bio-text, .concert-description {
+#bio-text, .concert-description, .nutrition-description {
   color: #2F437C;
   line-height: 1.5;
   font-size: 18px;

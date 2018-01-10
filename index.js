@@ -13,7 +13,10 @@ function smoothScroll() {
 }
 
 function newTabForLinks() {
+  //if condition doesnt work as expected.. come back to later
   if (!$('a[href^="mailto:')) {
+    return;
+  } else {
     $('a').attr('target', '_blank').attr('title', 'Link will open in a new window');
   }
 
