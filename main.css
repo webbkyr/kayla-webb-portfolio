@@ -2,7 +2,22 @@
   box-sizing: border-box;
 }
 
+/*****GRID*****/
+
+.row {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-basis: 100%;
+}
+
+
 body {
+  height: 100%;
   font-family: Verdana, Geneva, sans-serif;
   margin: 0;
   padding: 0;
@@ -24,7 +39,6 @@ header {
 }
 
 .main-container {
-  max-width: 1600px;
   line-height: 1.5;
 }
 
@@ -50,17 +64,15 @@ header {
 }
 
 .intro-text {
+  height: 600px;
   text-align: center;
-  background-image: url('./images/DSC_0531.JPG');
+  background: url('./images/DSC_0531.JPG') center no-repeat;
   /* background: no-repeat; */
   background-size: cover;
 }
 
+.bio-section, .work {
+  text-align: center;
+}
 
 
-/* 
-.bigslide {
-  background-image: url('http://lorempixel.com/g/500/500/');
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
