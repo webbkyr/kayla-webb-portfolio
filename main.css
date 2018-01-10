@@ -15,7 +15,8 @@
 
 .col {
   flex-basis: 100%;
-  /* why does flex 1 mess with layout when put here */
+  /* flex:1 */
+  /* why does flex 1 mess with layout when put here// it sets flex grow to 1 */
 }
 
 /****Main Styles***/
@@ -48,9 +49,9 @@ header {
   justify-content: flex-start;
 }
 
-
+/* //anything with 1 child probbaly doesnt need display flex */
 .header-info {
-  display: flex;
+  /* display: flex; */
   background-color: #1160AA;
   /* border: 1px solid black; */
 }
@@ -58,6 +59,15 @@ header {
 .main-nav-ul {
   padding: 0;
   display: flex;
+  justify-content: center;
+}
+
+.top-nav {
+  width: 100%;
+}
+
+.main-nav-link {
+/* flex: 2; */
 }
 
 .main-nav-link > a {
