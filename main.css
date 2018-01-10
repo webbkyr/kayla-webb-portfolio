@@ -16,6 +16,7 @@
   flex-basis: 100%;
 }
 
+/****Main Styles***/
 
 body {
   height: 100%;
@@ -67,8 +68,7 @@ header {
 .intro-text {
   height: 600px;
   text-align: center;
-  background: url('./images/DSC_0531.JPG') center no-repeat;
-  /* background: no-repeat; */
+  background: url('./images/ian-roseboro-384133.jpg') center no-repeat;
   background-size: cover;
 }
 
