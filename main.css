@@ -30,6 +30,7 @@ time, mark, audio, video {
 
 strong {
   font-weight: bold;
+  color: black;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -102,6 +103,7 @@ header {
   /* padding-bottom: 10px; */
   background-color: #1160AA;
   width: 100%;
+  flex: 1;
 }
 
 /* //anything with 1 child probbaly doesnt need display flex */
@@ -140,57 +142,70 @@ line-height: 40px;
   color: #E9D2B3;
 }
 
-.my-name {
-  margin: 0;
-  padding-top: 10px;
-}
-
 .intro-container {
   height: 600px;
-  text-align: center;
-  background: url('./images/michael-271900.jpg') center no-repeat;
+  background: center no-repeat;
   background-size: cover;
   color: #E9D2B3;
-  /* display: flex;
-  justify-content: flex-start; */
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('./images/michael-271900.jpg');
 }
+
+.my-name {
+  font-size: calc(80px + 2vw);
+  margin: 0;
+  text-align: center;
+  padding-bottom: 100px;
+
+}
+
+.i-am, .my-title, .data-nerd, .athlete {
+  text-align: center;
+}
+
 
 .intro-text {
-  /* margin-top: 80px;
-  margin-left: 10px; */
-
+  font-size: 30px;
 }
 
-.bio-section, .work {
-  margin-bottom: 20px;
+.bio-section {
+  background-color: #DEF3F6;
+}
+
+.bio-title {
+  font-size: calc(50px + 2vw);
+  color: #2F437C;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bio-section, .projects {
   text-align: center;
 
 }
 
 .headshot {
-  margin-top: 20px;
   border: 1px solid #9BB4DA;
+  border-radius: 8px;
+  max-width: 100%;
 
 }
 
-
-.contact {
-  padding: 0;
+.bio-text-container {
+  word-wrap: break-word;
+  max-width: 400px;
 }
 
 #bio-text {
-  float: left;
-  margin-top: 50px;
-  /* margin-left: 20px; */
-  /* margin: 0 auto; */
-  width: 400px;
+  color: #2F437C;
   line-height: 1.5;
-  word-wrap: break-word;
-  /* background-color: #161D6E; */
 } 
 
-.work {
-  clear: both;
+.projects {
 }
 
 
