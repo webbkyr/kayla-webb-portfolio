@@ -172,11 +172,11 @@ line-height: 40px;
   font-size: 30px;
 }
 
-.bio-section {
+.bio-section, .projects {
   background-color: #DEF3F6;
 }
 
-.bio-title {
+.bio-title, .projects-title {
   font-size: calc(50px + 2vw);
   color: #2F437C;
   padding-top: 20px;
@@ -189,20 +189,25 @@ line-height: 40px;
 }
 
 .headshot {
-  border: 1px solid #9BB4DA;
+  /* border: 1px solid #9BB4DA; */
   border-radius: 8px;
   max-width: 100%;
+  padding: 10px;
+  border-radius: 1em;
 
 }
 
 .bio-text-container {
-  word-wrap: break-word;
+  margin: 0 auto;
   max-width: 400px;
 }
 
 #bio-text {
+  /* border: 1px solid black; */
   color: #2F437C;
   line-height: 1.5;
+  font-size: 18px;
+  padding: 15px;
 } 
 
 .projects {
@@ -214,6 +219,12 @@ line-height: 40px;
 @media screen and (min-width: 600px) {
   .column {
     flex: 1;
+  }
+
+  .bio-text-container {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
   }
   
 }
