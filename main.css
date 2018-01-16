@@ -59,19 +59,19 @@ table {
 
 /*****GRID*****/
 
+/* //css grid research */
+
 .row {
   /* max-width: 1200px; */
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  /* flex: 1; */
-  /* margin: 0 auto; */
+  flex-wrap: wrap; */
+
 }
 
 .col {
-  flex-basis: 100%;
-  /* flex:1 */
-  /* why does flex 1 mess with layout when put here// it sets flex grow to 1 */
+  /* flex-basis: 100%; */
+
 }
 
 /****Main Styles***/
@@ -192,8 +192,8 @@ line-height: 40px;
 
 }
 
-.headshot, .concert-image, .nutrition-create, .lifting-image, .spartan-image {
-  border-radius: 8px;
+.headshot, .concert-image, .nutrition-create {
+  /* border-radius: 8px; */
   max-width: 100%;
   padding: 10px;
   border-radius: 1em;
@@ -204,18 +204,79 @@ line-height: 40px;
   margin: 0 auto;
   max-width: 400px;
   /* background-color: #11555E; */
-  border: 2px solid #11555E;
+  /* border: 2px solid #11555E; */
 }
 
 #bio-text, .concert-description, .nutrition-description {
   color: #2F437C;
   line-height: 1.5;
   font-size: 18px;
-  padding: 25px;
+  padding: 15px;
 } 
 
-.projects {
+/* .concert-image {
+  width: 60%;
+  float: left;
+} */
+
+.project {
+  overflow: hidden;
+  border-bottom: 1px solid lightgray;
+
 }
+
+
+#quickconcert, #nutrition {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.project-details {
+  width: 100%;
+  /* float: left; */
+  /* display: inline; */
+  padding: 10px;
+  margin: 0;
+  color: #2F437C;
+
+}
+
+.project-links {
+  /* float: right; */
+  padding: 10px;
+  margin: 0;
+  color: #2F437C;
+
+}
+
+.project-link-live {
+  margin: 0;
+  padding: 0;
+}
+
+.project-details > p {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.project-link-github > p {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* .project-links:last-child {
+  border-bottom: 1px solid lightgray;
+} */
+
+/* .project-stack-item {
+  width: 50%;
+} */
 
 .interests-title {
   color: #E9D2B3;
@@ -225,6 +286,16 @@ line-height: 40px;
   background-color: #1D2336;
 }
 
+.interests-text > a{
+  font-size: 36px;
+  color: #E9D2B3;
+}
+
+.lifting-image, .spartan-image {
+  max-width: 75%;
+  padding: 10px;
+  border-radius: 1em;
+}
 
 
 /* //use min width to let larger screen css kick in */

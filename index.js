@@ -17,7 +17,7 @@ function newTabForLinks() {
   if (!$('a[href^="mailto:')) {
     return;
   } else {
-    $('a').attr('target', '_blank').attr('title', 'Link will open in a new window');
+    $('a').attr('target', '_blank');
   }
 
 }

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="">
         <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
         <link rel="stylesheet" href="main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -49,44 +50,47 @@
             <section class="projects col" id="projects">
                 <h3 class='projects-title'>Projects</h3>
                 <section class="project">
-                    <h3>quick concert</h3>
-                    <img class="concert-image" src="./images/quickconcert_mock.png"
+                    <img class="concert-image" src="./images/quickconcert-screenshot.png"
                         alt="quick concert app landing page">
+                        <h3 id='quickconcert'>quick concert</h3>
                     <p class="concert-description">
                             An event-driven platform that allow users to search for concerts by their city, which are scheduled to take place the day-of, up until the next day. Organize a group of friends quickly by using the app's 'Share this Event' feature to say if you're attending the concert!
                     </p>
-                    <ul class="project-stack">
-                        <li class="project-stack-item">
-                            ReactJS
-                        </li>
-                        <li class="project-stack-item">
-                            Redux
-                        </li>
-                        <li class="project-stack-item">
-                            Node.js
-                        </li>
-                        <li class="project-stack-item">
-                            MongoDB/Mongoose
-                        </li>
-                    </ul>
+                    <div class='project-link-live'>
+                        <a href="http://sad-goldstine-40377d.netlify.com/"> Live Demo</a>
+                    </div>
+                    <nav class="project-details">
+                        <p>Technologies</p>
+                        <ul>
+                            <li class="project-stack-item">
+                                ReactJS
+                            </li>
+                            <li class="project-stack-item">
+                                Redux
+                            </li>
+                            <li class="project-stack-item">
+                                NodeJS
+                            </li>
+                            <li class="project-stack-item">
+                                MongoDB/Mongoose
+                            </li>
+                        </ul>
                     <nav class="project-links">
                         <ul>
-                            <li class="project-link project-link-live">
-                                <a  href="#">Demo</a>
+                            <li class="project-link project-link-github">
+                                <p>Source Code</p>
+                                <a href="https://github.com/webbkyr/QuickConcert-Server"> Server</a>
                             </li>
                             <li class="project-link project-link-github">
-                                <a href="https://github.com/webbkyr/QuickConcert-Server">GitHub - Server Side</a>
-                            </li>
-                            <li class="project-link project-link-github">
-                                <a href="#">GitHub - Client Side</a>
+                                <a href="https://github.com/webbkyr/QuickConcert-Client">Client</a>
                             </li>
                         </ul>
                     </nav>
                 </section>
                 <section class="project">
-                    <h3>Crowdsourced Nutrition App</h3>
+                    <h3 id='nutrition'>Crowdsourced Nutrition App</h3>
                     <img class="nutrition-create" src="./images/nutrition-create.png"
-                        alt="FooBar screenshot">
+                        alt="Nutrition app screenshot">
                     <p class="nutrition-description">
                              The nutrition app is a primarily back-end project. Users are able to lookup the four main macronutrients for food items and add additional items to the database. Users can also sort by the highest or lowest total calories. Inspiration for the app came from myFitnessPal.
                     </p>
@@ -104,7 +108,7 @@
                     <nav class="project-links">
                         <ul>
                             <li class="project-link project-link-live">
-                                <a href="https://immense-lowlands-79625.herokuapp.com/">Demo</a>
+                                <a href="https://immense-lowlands-79625.herokuapp.com/">Live Demo</a>
                             </li>
                             <li class="project-link project-link-github">
                                 <a href="https://github.com/thinkful-cohort-16/FoodNutrition-NodeCapstone">GitHub</a>
@@ -177,7 +181,7 @@
                         alt="Kayla snatching in fitness competition">
                     <img class='spartan-image' src='./images/FDC1EE76-F416-4744-9C60-2C34D36F013F.jpg' alt='Kayla competing in a Spartan race'>
                     <div class='interests-text-container'>
-                        <p class="interests-text" id="bio-text">
+                        <p class="interests-text" id="interests-text">
                          <a href="#top-nav">Back to top</a>
 
                         </p>
