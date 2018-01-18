@@ -120,6 +120,10 @@ header {
   justify-content: center;
 }
 
+.link {
+  padding: 5px;
+}
+
 .contact-link > a {
   padding: 10px;
 }
