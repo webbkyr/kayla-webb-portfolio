@@ -84,7 +84,8 @@ table {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: rgb(209, 224, 238);
+  background-color: #FEF8E6;
+  /* background-color: rgb(209, 224, 238); */
 
   margin: 0;
   padding: 0;
@@ -143,20 +144,20 @@ line-height: 40px;
 
 .main-nav-link > a {
   padding: 10px;
-  color: #E9D2B3;
+  color: #FEF8E6;
 }
 
 .intro-container {
   height: 700px;
   background: center no-repeat;
   background-size: cover;
-  color: #E9D2B3;
-  background-image: 
+  color: #FEF8E6;
+  /* background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
-    url('./images/michael-271900.jpg');
+    url('./images/michael-271900.jpg'); */
 }
 
 .my-name {
@@ -164,11 +165,13 @@ line-height: 40px;
   margin: 0;
   text-align: center;
   padding-bottom: 100px;
+  color: #351F39;
 
 }
 
 .i-am, .my-title, .data-nerd, .athlete {
   text-align: center;
+  color: #351F39;
 }
 
 .athlete {
