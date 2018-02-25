@@ -119,14 +119,24 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .link {
   padding: 5px;
 }
 
+.fa-lg, .fa-2x {
+  color:#EE2B47;
+}
+
+.fa-bars {
+  margin: 5px;
+}
+
 .contact-link > a {
+  text-decoration: none;
+  color: #F6F6F6;
   padding: 10px;
 }
 
@@ -164,6 +174,7 @@ line-height: 40px;
 .my-name {
   font-size: calc(40px + 2vw);
   /* make it 80px on full desktop */
+  padding-top: 20px;
   margin: 0;
   text-align: center;
   /* padding-bottom: 100px; */
