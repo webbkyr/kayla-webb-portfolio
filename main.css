@@ -168,14 +168,19 @@ header {
   height: 30%;
   position: absolute;
   transition: all .3s ease-in-out .1s;
-
-
 }
-.hidden {
+
+.hidden, .long-bio {
   /* display: none; */
   opacity: 0;
   visibility: hidden;
 
+}
+
+.long-bio {
+  visibility: visible;
+  opacity: 1;
+  transition: all .2s linear;
 }
 
 .main-nav-link {

@@ -28,8 +28,16 @@ function toggleNav() {
   });
 }
 
+function toggleBio() {
+  $('#long_version').on('click', () => {
+    console.log('clickeD?')
+    $('long-bio').toggleClass('long-bio');
+  });
+}
+
 $(document).ready(() => {
   smoothScroll();
   newTabForLinks();
   toggleNav();
+  toggleBio();
 });
