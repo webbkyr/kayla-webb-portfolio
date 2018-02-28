@@ -24,7 +24,7 @@ function newTabForLinks() {
 function toggleNav() {
   $('.hamburger').on('click', () => {
     console.log('clicked?');
-    $('.main-nav-ul').toggle();
+    $('.main-nav-ul').toggleClass('hidden');
   });
 }
 

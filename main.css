@@ -106,12 +106,12 @@ header {
 }
 
 /* //anything with 1 child probbaly doesnt need display flex */
-.hidden {
-  display: none;
-}
+
 
 .top-nav {
   width: 100%;
+  border-bottom: 1px solid #EE2B47;
+
 }
 
 .contact {
@@ -120,7 +120,6 @@ header {
   height: 50px;
   display: flex;
   justify-content: flex-end;
-  border-bottom: 1px solid #EE2B47;
 
 }
 
@@ -158,6 +157,8 @@ header {
 }
 
 .main-nav-ul {
+  visibility: visible;
+  opacity: 1;
   margin: 0;
   padding: 0;
   /* display: flex; */
@@ -166,9 +167,16 @@ header {
   width: 100%;
   height: 30%;
   position: absolute;
+  transition: all .3s ease-in-out .1s;
+
 
 }
+.hidden {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
 
+}
 
 .main-nav-link {
 line-height: 40px;
