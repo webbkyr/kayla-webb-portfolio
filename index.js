@@ -19,10 +19,17 @@ function newTabForLinks() {
   } else {
     $('a').attr('target', '_blank');
   }
+}
 
+function toggleNav() {
+  $('.hamburger').on('click', () => {
+    console.log('clicked?');
+    $('.main-nav-ul').toggle();
+  });
 }
 
 $(document).ready(() => {
   smoothScroll();
   newTabForLinks();
+  toggleNav();
 });
