@@ -249,7 +249,7 @@ border-bottom: 1px dotted #EE2B47;
 
 }
 
-.headshot, .concert-image, .nutrition-create, .project-image {
+.headshot, .concert-image, .cf-create, .project-image {
   /* border-radius: 8px; */
   max-width: 100%;
   padding: 10px;
@@ -264,7 +264,7 @@ border-bottom: 1px dotted #EE2B47;
   /* border: 2px solid #11555E; */
 }
 
-#bio-text, .concert-description, .nutrition-description {
+#bio-text, .concert-description, .cf-description {
   color: #2F437C;
   line-height: 1.5;
   font-size: 18px;
