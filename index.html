@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='./index.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet">
     <title>Porfolio</title>
   </head>
   <body>
@@ -27,101 +27,103 @@
             <li class='link link-mail'><a href='mailto:kaylarwebb@gmail.com'><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
           </ul>
           <ul class='main-nav-ul hidden mobile-nav'>
-              <li class="main-nav-link"><a href="#bio-section">who am i?</a></li>
-              <li class="main-nav-link"><a href="#projects">dope projects.</a></li>
-              <li class="main-nav-link"><a href="#interests-section">lifting &amp; good vibes</a></li>
+              <li class="main-nav-link"><a href="#bio-section">My Story</a></li>
+              <li class="main-nav-link"><a href="#projects"> Projects</a></li>
+              <li class="main-nav-link"><a href="#interests-section">Interests</a></li>
              </ul>
         </nav>
       </header>
       <section class='intro-container'>
         <div class='intro-text'>
           <h2 class='intro-header my-name'> Kayla R. Webb</h21>
-            <!-- <h3 class='intro-header i-am'>I am a...</h3> -->
-            <h3 class='intro-header my-title'> developer.</h3>
-            <!-- <h3 class='intro-header data-nerd'>  Legislative Data Nerd</h3> -->
-            <h3 class='intro-header athlete'> weightlifter.</h3>
+            <h3 class='intro-header my-title'>Software Developer</h3>
       </section>
       <section class='bio-section col' id='bio-section'>
-        <h3 class='bio-title'>Bio</h3>
-        <img class="headshot headshot-large-screen" src="./images/DSC_0567.JPG"
-                    alt="Smiling Kayla in Hawaii">
-        <div class='bio-text-container bio-text-large'>
+         <div class='card'>
+          <img class="headshot large-headshot" src="./images/headshot2018.jpg"
+          alt="Kayla's professional headshot 2018">
+         </div>
+        <div class='bio-text-container'>
           <p class="bio-text" id="bio-text">
-              <strong>tl;dr ? <span class='short-bio' id='short-bio'>shortversion</span> : <span id='long_version'>longversion (see more)</span></strong>
-              what’s up? my name is Kayla, and I like to build web applications using HTML5, CSS3, and Javascript frameworks such as VueJS and React. I was formally trained in the MERN stack (MongoDB, Express, React, Node) in Thinkful's 5-month Engineering Immersion program, but I'm willing and excited to explore other technologies!
+              What’s up? My name is Kayla, and I like to build web applications using HTML5, CSS3, and Javascript frameworks such as VueJS and React. I was formally trained in the MERN stack (MongoDB, Express, React, Node) in Thinkful's 5-month Engineering Immersion program, but I'm willing and excited to explore other technologies!
               <br>
-              <p class='long-bio'>my journey to this point has been quite unconventional - I graduated from Howard University in 2013 with a degree in political science and my plan was to go to law school, but I ended up doing policy and legislative work. after a brief stint in journalism, I became obsessed with data, particularly federal legislative data and procedure. I learned SQL and helped developers in my day to day with building tools to help government affairs professionals do their jobs. experienced in the agile methodology and scrum, I strongly believe in effective communication, being flexible in the development process, and putting users first.
-              
-              i immersed in coding 50-60 hours a week for 5 months, and it was the hardest thing I’ve ever done in my life, thus far. i truly believe it has made me a better teammate (we pair programmed everyday!), a more effective communicator, and a better person in general. when I’m not coding, I’m usually at the gym - I’m a competitive weightlifter and crossfitter - or I’m playing with my dog. have a look around and hit me up if you have any questions. thanks for reading!</p>
-              
+              <br>
+              My journey to this point has been quite unconventional - I graduated from Howard University in 2013 with a degree in political science and my plan was to go to law school, but I ended up doing policy and legislative work. After a brief stint in journalism, I became obsessed with data, particularly federal legislative data and the intracacies of legislative procedure. I learned SQL and helped the developers in my day-to-day with building tools to help government affairs professionals do their jobs. Experienced in the agile methodology and scrum, I strongly believe in effective communication, being flexible in the development process, and always putting users first.
+              <br>
+              <br>
+              During the engineering bootcamp, I immersed in coding 50-60 hours a week for 5 months, and it has thus far been the hardest thing I’ve ever done in my life. I truly believe it has made me a better teammate (we pair programmed everyday!), a more effective communicator, and a better person in general. When I’m not coding, I’m usually at the gym - I’m a competitive weightlifter and Crossfitter - or I’m playing with my dog. Have a look around and hit me up if you have any questions. Thanks for reading!
           </p>
         </div>
       </section>
       <section class="projects col" id="projects">
         <h3 class='projects-title'>Projects</h3>
         <section class="project">
-          <img class="concert-image" src="./images/quickconcert-screenshot.png"
-                        alt="quick concert app landing page">
-          <h3 id='quickconcert'>quick concert</h3>
+          <img class="concert-image" src="./images/quickconcert-iphone.png"
+          alt="quick concert app landing page">
+          <div class='project-links'>
+              <a href="http://quickconcert.netlify.com/"> Demo <i class="fas fa-laptop"></i>
+              </a> <a href="https://github.com/webbkyr/QuickConcert-Client">Code <i class="fas fa-code"></i>
+              </a>
+            </div>
           <p class="concert-description">
             An event-driven platform that allow users to search for concerts by their city, which are scheduled to take place the day-of, up until the next day. Organize a group of friends quickly by using the app's 'Share this Event' feature to say if you're attending the concert!
           </p>
-          <div class='project-link-live'>
-            <a href="http://sad-goldstine-40377d.netlify.com/"> Live Demo</a>
-          </div>
             <nav class="project-details">
-              <p>Technologies</p>
-              <ul>
-                <li class="project-stack-item">ReactJS</li>
-                <li class="project-stack-item">Redux</li>
-                <li class="project-stack-item">NodeJS</li>
-                <li class="project-stack-item">MongoDB/Mongoose</li>
+              <p>Skills <i class="fas fa-bolt"></i></p>
+              <ul class='skills-icons'>
+                <li class="project-stack-item"><i class="fab fa-react fa-2x"x></i>
+                </li>
+                <!-- <li class="project-stack-item">Redux</li> -->
+                <li class="project-stack-item"><i class="fab fa-node-js fa-2x"></i>
+                </li>
+                <li class="project-stack-item"><i class="fas fa-database fa-2x"></i>
+                </li>
               </ul>
-            <nav class="project-code">
+            <!-- <nav class="project-code">
               <ul>
                 <li class="project-link project-link-github">
-                   <p>Source Code</p>
+                   <p>Code</p>
                    <a href="https://github.com/webbkyr/QuickConcert-Server">Server</a>
                 </li>
                 <li class="project-link project-link-github">
                    <a href="https://github.com/webbkyr/QuickConcert-Client">Client</a>
-                </li>
+                </li> -->
               </ul>
             </nav>
        </section>
        <section class="project">
-         <h3 id='cf'>Learn Crossfit Lingo</h3>
+         <!-- <h3 id='cf'>Learn Crossfit Lingo</h3> -->
          <img class="cf-create" src="./images/cf-terms-landing.png" alt="CrossFit Lingo app screenshot">
          <p class="cf-description">
            An app that utilizes a spaced-repetition algorithm, here you are given a Crossfit term you submit the correct acronym for that term. This app is great for beginners just getting into the Crossfit community when all the terms and phrases can be overwhelming to learn. </p>
           <div class='project-link-live'>
-            <a href="#">Live Demo</a>
+            <a href="#">Demo</a> | <a href="#">GitHub</a>
           </div>
             <nav class='project-details'>
-              <p>Technologies</p>
+              <p>Skills</p>
               <ul class="project-stack">
                 <li class="project-stack-item">NodeJS</li>
-                <li class="project-stack-item">Data structure - Queue</li>
-                <li class="project-stack-item">MongoDB/Mongoose</li>
+                <li class="project-stack-item">Data Structure - Queue</li>
                 <li class="project-stack-item">ReactJS</li>
               </ul>
             <nav class="project-code">
               <ul>
-                <li class="project-link project-link-github">
-                  <p>Source Code</p>
-                   <a href="#">GitHub</a>
+                <!-- <li class="project-link project-link-github">
+                  <p>Code</p>
+                   <a href="#">GitHub</a> -->
                 </li>
               </ul>
             </nav>
        </section>
        <section class="project">
-         <img class="project-image" src="./images/symbasgallery.png"
-                        alt="Symbas Gallery screenshot">
+          <img class="project-image" src="./images/symba-iphone.png"
+           alt="Symbas Gallery screenshot">
         <h3>Symba's Photogallery</h3>
          <p class="project-description">
          Purely a front-end application, Symba's Photogallery is a collection of filterable photos of my two-year old bullmastiff. I built this project to learn about Vue, a Javascript framework.
         </p>
         <ul class="project-stack">
+          <p>Skills</p>
           <li class="project-stack-item">VueJS</li>
           <li class="project-stack-item">HTML5</li>
           <li class="project-stack-item">CSS3</li>
@@ -138,16 +140,17 @@
         </nav>
       </section>
       <section class="project">
-        <h3>Project 4</h3>
-        <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=4"
-                        alt="Wibble screenshot">
+        <h3>News Spot</h3>
+        <img class="project-image" src="./images/newsspot-desktop.png"
+                        alt="Desktop view of News Spot app">
         <p class="project-description">
         Interdum et malesuada fames ac ante ipsum primis in faucibus.
         </p>
         <ul class="project-stack">
+          <p>Skills</p>
           <li class="project-stack-item">React</li>
-          <li class="project-stack-item">Redux</li>
-          <li class="project-stack-item">Node.js</li>
+          <li class="project-stack-item">OAuth</li>
+          <li class="project-stack-item">NodeJS</li>
         </ul>
         <nav class="project-links">
           <ul>
@@ -164,8 +167,7 @@
          <h3 class='interests-title'>Interests</h3>
          <div class='interests-text-container'>
            <div class="interests-text" id="interests-text">
-             <p>I'm passionate about fitness and health. Current personal records in weightlifting include a #140lb snatch, #165lb clean and jerk, and a #205lb front squat.</p>
-             <p>Reading is also important to me. Namely, I love dystopian fiction and biographies.</p>
+             <p>I am also passionate about functional fitness and weightlifting. I competed at my first USAW-sanctioned meet in 2017 and have also participated in a handful of local functional fitness competitions.</p>
           </div>
             <img class="lifting-image" src="./images/IMG_6884.JPG"
                 alt="Kayla snatching in fitness competition">

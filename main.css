@@ -83,7 +83,7 @@ table {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+font-family: 'Varela', sans-serif;
   background-color: #2C2E3E;
   margin: 0;
   padding: 0;
@@ -107,6 +107,9 @@ header {
 
 /* //anything with 1 child probbaly doesnt need display flex */
 
+a {
+  cursor: pointer;
+}
 
 .top-nav {
   width: 100%;
@@ -196,7 +199,7 @@ border-bottom: 1px dotted #EE2B47;
 }
 
 .intro-container {
-  height: 700px;
+  height: 300px;
   background: center no-repeat;
   background-size: cover;
   color: #F6F6F6;
@@ -229,52 +232,69 @@ border-bottom: 1px dotted #EE2B47;
 }
 
 
-.intro-text {
-  font-size: 30px;
-}
-
-.bio-section, .projects {
-  background-color: #DEF3F6;
+.intro-text, .projects-title, .interests-title {
+  font-size: 36px;
 }
 
 .bio-title, .projects-title, .interests-title {
-  font-size: calc(50px + 2vw);
-  color: #2F437C;
+  /* font-size: calc(50px + 2vw); */
+  text-align: center;
+  color: #F6F6F6;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.bio-section, .projects, .interests-section {
-  text-align: center;
 
+.card {
+  margin: 0 auto;
+  width: 250px;
+  box-shadow: 0 4px 8px 0 black;
+  transition: 0.4s;
+  border-radius: 10px;
+  /* padding: 10px; */
 }
 
-.headshot, .concert-image, .cf-create, .project-image {
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.headshot {
+  width: 220px;
+  margin: 0 auto;
+    border-radius: 10px;
+
+
+}
+.concert-image, .cf-create, .project-image {
   /* border-radius: 8px; */
+  opacity: 0.7;
   max-width: 100%;
   padding: 10px;
   border-radius: 1em;
 
 }
 
+.headshot:hover {
+  opacity: 1;
+}
+
 .bio-text-container, .interests-text {
   margin: 0 auto;
   max-width: 400px;
+  font-weight: normal;
   /* background-color: #11555E; */
   /* border: 2px solid #11555E; */
 }
 
 #bio-text, .concert-description, .cf-description {
-  color: #2F437C;
-  line-height: 1.5;
+  color: #F6F6F6;
+  line-height: 1.8;
   font-size: 18px;
-  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 } 
 
-/* .concert-image {
-  width: 60%;
-  float: left;
-} */
 
 .project {
   overflow: hidden;
@@ -294,7 +314,7 @@ border-bottom: 1px dotted #EE2B47;
   /* display: inline; */
   padding: 10px;
   margin: 0;
-  color: #2F437C;
+  color: #F6F6F6;
 
 }
 
@@ -306,33 +326,40 @@ border-bottom: 1px dotted #EE2B47;
 
 }
 
-.project-link-live {
+.project-links, .project-links > a {
   margin: 0;
-  padding: 0;
+  padding: 5px;
+  /* color: #F6F6F6; */
+  font-size: 18px;
+  color: #EE2B47;
+  text-align: center;
 }
 
 .project-details > p {
   font-size: 24px;
-  color: black;
+  padding-bottom: 10px;
+  color: #F6F6F6;
   text-align: center;
-  font-weight: bold;
+  font-weight: normal;
 }
 
-.project-link-github > p {
+.skills-icons {
+  padding-bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-stack-item {
+}
+
+/* .project-link-github > p {
   font-size: 24px;
   font-weight: bold;
   color: black;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-/* .project-links:last-child {
-  border-bottom: 1px solid lightgray;
-} */
-
-/* .project-stack-item {
-  width: 50%;
 } */
 
 .interests-title, .interests-text {
@@ -340,7 +367,7 @@ border-bottom: 1px dotted #EE2B47;
 }
 
 .interests-section {
-  background-color: #1D2336;
+  /* background-color: #1D2336; */
   border: 2px solid white;
 }
 
@@ -361,12 +388,6 @@ border-bottom: 1px dotted #EE2B47;
   color: #E9D2B3;
 
 }
-
-/* .interests-text {
-  color: #E9D2B3;
-} */
-
-
 
 .lifting-image, .spartan-image {
   max-width: 80%;
