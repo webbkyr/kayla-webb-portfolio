@@ -33,4 +33,4 @@ $(document).ready(() => {
   smoothScroll();
   newTabForLinks();
   toggleNav();
-ß});
+});
