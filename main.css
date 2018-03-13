@@ -180,10 +180,8 @@ a {
 
 }
 
-.long-bio {
-  visibility: visible;
-  opacity: 1;
-  transition: all .2s linear;
+.card {
+  display: none;
 }
 
 .main-nav-link {
@@ -199,10 +197,11 @@ border-bottom: 1px dotted #EE2B47;
 }
 
 .intro-container {
-  height: 300px;
+  height: 200px;
   background: center no-repeat;
   background-size: cover;
   color: #F6F6F6;
+  text-align: center;
   /* background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.6),
@@ -210,6 +209,8 @@ border-bottom: 1px dotted #EE2B47;
     ),
     url('./images/michael-271900.jpg'); */
 }
+
+
 
 .my-name {
   font-size: calc(40px + 2vw);
@@ -246,12 +247,15 @@ border-bottom: 1px dotted #EE2B47;
 
 
 .card {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
   width: 250px;
   box-shadow: 0 4px 8px 0 black;
   transition: 0.4s;
   border-radius: 10px;
-  /* padding: 10px; */
+  padding: 10px;
 }
 
 .card:hover {
@@ -260,9 +264,12 @@ border-bottom: 1px dotted #EE2B47;
 
 
 .headshot {
-  width: 220px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-    border-radius: 10px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px 0 black; */
+
 
 
 }
@@ -401,6 +408,9 @@ border-bottom: 1px dotted #EE2B47;
     margin: 0 auto;
     max-width: 500px;
     text-align: center;
+  }
+  .card {
+    display: block;
   }
   
 }
