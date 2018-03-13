@@ -23,21 +23,14 @@ function newTabForLinks() {
 
 function toggleNav() {
   $('.hamburger').on('click', () => {
-    console.log('clicked?');
     $('.main-nav-ul').toggleClass('hidden');
   });
 }
 
-function toggleBio() {
-  $('#long_version').on('click', () => {
-    console.log('clickeD?')
-    $('long-bio').toggleClass('long-bio');
-  });
-}
+
 
 $(document).ready(() => {
   smoothScroll();
   newTabForLinks();
   toggleNav();
-  toggleBio();
-});
+ß});

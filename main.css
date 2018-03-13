@@ -266,10 +266,11 @@ border-bottom: 1px dotted #EE2B47;
 
 
 }
+
 .concert-image, .cf-create, .project-image {
   /* border-radius: 8px; */
-  opacity: 0.7;
-  max-width: 100%;
+  /* opacity: 0.7; */
+  max-width: 750px;
   padding: 10px;
   border-radius: 1em;
 
