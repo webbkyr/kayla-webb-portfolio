@@ -280,7 +280,7 @@ border-bottom: 1px dotted #EE2B47;
   /* border: 2px solid #11555E; */
 }
 
-#bio-text, .concert-description, .cf-description {
+#bio-text, .project-description {
   color: #F6F6F6;
   line-height: 1.8;
   font-size: 18px;
@@ -353,26 +353,17 @@ border-bottom: 1px dotted #EE2B47;
   justify-content: space-around;
 }
 
-.project-stack-item {
-}
-
-/* .project-link-github > p {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
+.interests-text-container {
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-} */
-
+}
 .interests-title, .interests-text {
-  color: #E9D2B3;
+  color: #F6F6F6;
 }
 
-.interests-section {
-  /* background-color: #1D2336; */
+/* .interests-section {
+  background-color: #1D2336;
   border: 2px solid white;
-}
+} */
 
 .interests-text {
   line-height: 1.5;
@@ -382,13 +373,13 @@ border-bottom: 1px dotted #EE2B47;
 
 .interests-text > a {
   font-size: 36px;
-  color: #E9D2B3;
+  color: #F6F6F6;
 }
 
 #back-to-top {
   margin-top: 15px;
   font-size: 36px;
-  color: #E9D2B3;
+  color: #F6F6F6;
 
 }
 
