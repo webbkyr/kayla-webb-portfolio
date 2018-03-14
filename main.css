@@ -293,6 +293,7 @@ border-bottom: 1px dotted #EE2B47;
   font-size: 18px;
   padding-left: 20px;
   padding-right: 20px;
+  overflow: hidden;
 } 
 
 
