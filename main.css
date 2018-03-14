@@ -111,10 +111,16 @@ a {
   cursor: pointer;
 }
 
+
+
 .top-nav {
   width: 100%;
   border-bottom: 1px solid #EE2B47;
 
+}
+
+.fa-lg, .fa-2x, .fas, .fab {
+  color:#EE2B47;
 }
 
 .contact {
@@ -131,9 +137,9 @@ a {
   margin-top: 10px;
 }
 
-.fa-lg, .fa-2x {
+/* .fa-lg, .fa-2x, .fas, .fab {
   color:#EE2B47;
-}
+} */
 
 
 .hamburger {
