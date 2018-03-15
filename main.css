@@ -190,14 +190,14 @@ a {
   display: none;
 }
 
-.main-nav-link {
+.main-nav-link, .secondary-links {
 line-height: 40px;
 margin-top: 15px;
 padding-left: 10px;
 border-bottom: 1px dotted #EE2B47;
 }
 
-.main-nav-link > a {
+.main-nav-link > a, .secondary-links > a {
   padding: 10px;
   color: #F6F6F6;
 }
@@ -397,7 +397,12 @@ border-bottom: 1px dotted #EE2B47;
 
 }
 
-.lifting-image, .spartan-image {
+.fa-angle-double-right {
+  position: relative;
+  top: -120px;
+}
+
+.lifting-image {
   max-width: 80%;
   padding: 10px;
   border-radius: 1em;
