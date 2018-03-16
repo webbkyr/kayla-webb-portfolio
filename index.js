@@ -19,12 +19,13 @@ function newTabForLinks() {
   } else {
     $('a').attr('target', '_blank');
   }
-}
 
-function toggleNav() {
-  $('.hamburger').on('click', () => {
-    $('.main-nav-ul').toggleClass('hidden');
-  });
+
+// function toggleNav() {
+//   $('.hamburger').on('click', () => {
+//     $('.main-nav-ul').toggleClass('hidden');
+//   });
+
 }
 
 
@@ -32,5 +33,5 @@ function toggleNav() {
 $(document).ready(() => {
   smoothScroll();
   newTabForLinks();
-  toggleNav();
+  // toggleNav();
 });
