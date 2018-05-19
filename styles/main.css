@@ -1,62 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* CSS RESET */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-strong {
-  font-weight: bold;
-  color: black;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
+@import './normalize.css';
 /****Main Styles***/
 
 .main-container {
@@ -149,15 +91,34 @@ a {
   text-align: center;
 }
 
+
+/* Cursor Animation */
+
 .my-name {
   font-size: calc(40px + 2vw);
-  /* make it 80px on full desktop */
   padding-top: 20px;
   margin: 0;
   text-align: center;
-  /* padding-bottom: 100px; */
   color: #F6F6F6;
+  min-width: 375px;
+}
 
+.css-typing {
+  width: 380px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 3s steps(50, end);
+    animation: type 3s steps(50, end);
+}
+
+
+@keyframes type{
+  from { width: 0;}
+  to { width: 100}
+}
+
+@-webkit-keyframes type{
+  from { width: 0; }
 }
 
 .i-am, .my-title, .data-nerd, .athlete {
@@ -376,7 +337,29 @@ margin-bottom: 20px;
   }
   
 /* //clear both is in the next elemet; overfloew - we want just the parent affected by the floats, encloses the floating element so the next element doesnt consider this */
-  .bio-section {
+  /* .bio-section {
     overflow: hidden;
+  } */
+}
+
+@media screen and (min-width: 760px) {
+  .bio-section {
+    display: flex;
+  }
+  .card {
+    width: 40%;
+    height: 40%;
+    padding: 15px;
+    margin-left: 10px;
+
+  }
+  .headshot {
+    width: 100%;
+  }
+  bio-text {
+    float: right;
+    /* width: 600px; */
+ 
   }
 }
+
