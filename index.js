@@ -1,12 +1,12 @@
 'use strict';
 
 function scrollAnchor(event, respond = null) {
-  const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
   event.preventDefault();
 
-  let targetID = respond ? respond.getAttribute('href') : this.getAttribute('href');
+  const targetID = respond ? respond.getAttribute('href') : this.getAttribute('href');
+  const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
   const targetAnchor = document.querySelector(targetID);
-
+  
   if (!targetAnchor) return;
   const originalTop = distanceToTop(targetAnchor);
   window.scrollBy({ top: originalTop , left: 0, behavior: 'smooth'});
