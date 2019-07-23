@@ -1,37 +1,31 @@
 'use strict';
-/*global $ */
 
+function scrollAnchor(event, respond = null) {
+  const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+  event.preventDefault();
+
+  let targetID = respond ? respond.getAttribute('href') : this.getAttribute('href');
+  const targetAnchor = document.querySelector(targetID);
+
+  if (!targetAnchor) return;
+  const originalTop = distanceToTop(targetAnchor);
+  window.scrollBy({ top: originalTop , left: 0, behavior: 'smooth'});
+
+  const checkIfDone = setInterval(() => {
+    const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+    if (distanceToTop(targetAnchor) === 0 || atBottom ) {
+      targetAnchor.tabIndex = '-1';
+      targetAnchor.focus();
+      window.history.pushState('', '', targetID);
+      clearInterval(checkIfDone);
+    }
+  }, 100);
+}
 
 function smoothScroll() {
-  $(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-    }, 800);
-  });
+  document.querySelectorAll('.scroll').forEach(link => link.onclick = scrollAnchor);
 }
 
-function newTabForLinks() {
-  //if condition doesnt work as expected.. come back to later
-  if (!$('a[href^="mailto:')) {
-    return;
-  } else {
-    $('a').attr('target', '_blank');
-  }
-
-
-// function toggleNav() {
-//   $('.hamburger').on('click', () => {
-//     $('.main-nav-ul').toggleClass('hidden');
-//   });
-
-}
-
-
-
-$(document).ready(() => {
+document.addEventListener('DOMContentLoaded', () => {
   smoothScroll();
-  newTabForLinks();
-  // toggleNav();
 });

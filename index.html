@@ -15,19 +15,16 @@
   <body>
     <main class='container'>
       <header class="row">
-        <nav class="four columns top-nav">
-          <ul class='main-nav-ul  mobile-nav'>
-            <li class="main-nav-link"><a href="#projects"> Projects</a></li>
-            <li class="main-nav-link"><a href="#interests-section">Interests</a></li>
+        <nav class="top-nav four columns" id="top-nav">
+          <ul class='main-nav-ul mobile-nav'>
+            <li class="main-nav-link"><a class="scroll" href="#projects"> Projects</a></li>
+            <li class="main-nav-link"><a class="scroll" href="#interests-section">Interests</a></li>
           </ul>
           <ul class='contact'>
-            <li class='link link-medium'>
-              <a href='https://medium.com/@KaylaRWebb'><i class="fab fa-medium fa-lg"></i></a>
-            </li>
             <li class='link link-linkedin'>
-              <a href='https://www.linkedin.com/in/kayla-webb-a7012115/'><i class="icon-linkedin fa-lg"></i></a></li>
+              <a target="_blank" href='https://www.linkedin.com/in/kayla-webb-a7012115/'><i class="icon-linkedin fa-lg"></i></a></li>
             <li class='link link-github'>
-              <a href='https://www.github.com/webbkyr'><i class="fab fa-github fa-lg" aria-hidden="true"></i></a></li>
+              <a target="_blank" href='https://www.github.com/webbkyr'><i class="fab fa-github fa-lg" aria-hidden="true"></i></a></li>
             <li class='link link-mail'>
               <a href='mailto:kaylarwebb@gmail.com'><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
           </ul>
@@ -40,10 +37,6 @@
             <i class="fas fa-code"></i>
           </section>
       <section class='bio-section col' id='bio-section'>
-         <!-- <div class='card'>
-          <img class="headshot" src="./images/headshot2018.jpg"
-          alt="Kayla's professional headshot 2018">
-         </div> -->
         <div class='bio-text-container'>
           <p class="bio-text" id="bio-text">
               Hey, I'm Kayla, and I build things on you can use on the web. I was formally trained in the MERN stack (MongoDB, Express, React, Node) in Thinkful's 5-month Engineering Immersion program, but I'm willing and excited to explore other technologies!
@@ -58,8 +51,8 @@
           <img class="concert-image" src="./images/quickconcert-iphone.png"
           alt="quick concert app landing page">
           <div class='project-links'>
-              <a href="http://quickconcert.netlify.com/"> Demo <i class="fas fa-laptop"></i>
-              </a> <a href="https://github.com/webbkyr/QuickConcert-Client">Code <i class="fas fa-code-branch"></i>
+              <a target="_blank" ref="http://quickconcert.netlify.com/"> Demo <i class="fas fa-laptop"></i>
+              </a> <a target="_blank" href="https://github.com/webbkyr/QuickConcert-Client">Code <i class="fas fa-code-branch"></i>
               </a>
             </div>
           <p class="project-description" id='qc'>
@@ -80,8 +73,8 @@
        <section class="project">
          <img class="cf-create" src="./images/crossfit-lingo-iphone.png" alt="CrossFit Lingo app screenshot">
          <div class='project-links'>
-          <a href="https://crossfitlingo.netlify.com/"> Demo <i class="fas fa-laptop"></i>
-          </a> <a href="https://github.com/webbkyr/crossfit-terms">Code <i class="fas fa-code-branch"></i>
+          <a target="_blank" href="https://crossfitlingo.netlify.com/"> Demo <i class="fas fa-laptop"></i>
+          </a> <a target="_blank" href="https://github.com/webbkyr/crossfit-terms">Code <i class="fas fa-code-branch"></i>
           </a>
         </div>
          <p class="project-description">
@@ -99,8 +92,8 @@
           <img class="project-image" src="./images/symba-iphone.png"
            alt="Symbas Gallery screenshot">
            <div class='project-links'>
-              <a href="http://symbasgallery.netlify.com/"> Demo <i class="fas fa-laptop"></i>
-              </a> <a href="https://github.com/webbkyr/SymbasGallery">Code <i class="fas fa-code-branch"></i>
+              <a target="_blank" href="http://symbasgallery.netlify.com/"> Demo <i class="fas fa-laptop"></i>
+              </a> <a target="_blank" href="https://github.com/webbkyr/SymbasGallery">Code <i class="fas fa-code-branch"></i>
               </a>
           </div>
          <p class="project-description">
@@ -119,8 +112,8 @@
         <img class="project-image" src="./images/newsspot-iphone.png"
            alt="Desktop view of News Spot app">
            <div class='project-links'>
-              <a href="https://newsspot.netlify.com/"> Demo <i class="fas fa-laptop"></i>
-              </a> <a href="https://github.com/thinkful-cohort-16/client-news-app-capstone">Code <i class="fas fa-code-branch"></i>
+              <a target="_blank" href="https://newsspot.netlify.com/"> Demo <i class="fas fa-laptop"></i>
+              </a> <a target="_blank" href="https://github.com/thinkful-cohort-16/client-news-app-capstone">Code <i class="fas fa-code-branch"></i>
               </a>
           </div>
          <p class="project-description">
@@ -146,10 +139,10 @@
             <img class="lifting-image" src="./images/IMG_7226.JPG"
                 alt="Kayla snatching in fitness competition">
                 <!-- <i class="fas fa-angle-double-right fa-2x"></i> -->
-            <a id='back-to-top' href="#top-nav">
-              Back to top 
-              <i class="fas fa-angle-double-up"></i>
-            </a>
+                <a class="scroll back-to-top" href="#top-nav">
+                Back to top
+                <i class="fas fa-angle-double-up"></i>
+                </a>
           </div>
       </section>
     </main> 
