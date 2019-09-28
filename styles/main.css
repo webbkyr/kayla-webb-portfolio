@@ -18,16 +18,19 @@ a {
   cursor: pointer;
 }
 
+.container {
+  text-align: center;
+}
+
 .top-nav {
   border-bottom: 1px solid #5c4d4d;
-
 }
 
 .fa-lg, .fa-2x, .fas, .fab {
   color: #915b4a;
 }
 
-.contact {
+.top-nav__contact-list {
   padding: 0;
   height: 50px;
   display: flex;
@@ -40,13 +43,7 @@ a {
   margin-top: 10px;
 }
 
-.contact-link > a {
-  text-decoration: none;
-  color: #5c4d4d;
-  padding: 10px;
-}
-
-.main-nav-ul {
+.top-nav__section-list {
   margin: 0;
   padding-left: 5px;
   display: flex;
@@ -55,14 +52,13 @@ a {
   top: 20px;
 }
 
-.main-nav-link > a {
+.top-nav__section-item > a {
   padding-right: 20px;
   color: #5c4d4d;
   font-weight: lighter;
 }
 
-
-.intro__name-text {
+.section__top-text-item--name {
   font-size: calc(40px + 2vw);
   padding-top: 20px;
   margin: 0;
@@ -70,35 +66,28 @@ a {
   color: #a96851;
 }
 
-.i-am, .intro__title-text, .data-nerd, .athlete {
-  text-align: center;
-  color:#a96851;
-}
-
-.athlete {
-  padding-bottom: 15px;
-}
-
-.intro__text, .projects-title, .interests-title {
-  font-size: 36px;
-}
-
-.bio-title, .projects-title, .interests-title {
+.section__text-item-title {
   text-align: center;
   color: #a96851;
 }
 
-.bio-text-container, .interests-text {
+.section__top-text-container, .projects-title, .interests-title {
+  font-size: 36px;
+}
+
+.section__title {
+  text-align: center;
+  color: #a96851;
+}
+
+.section__bio-container {
+  max-width: 80%;
   margin: 0 auto;
-  max-width: 400px;
-  font-weight: normal;
 }
 
 #bio-text, .project-description {
   color: #a96851;
-  line-height: 1.8;
   font-size: 18px;
-  padding: 10px;
   margin-bottom: 0;
 } 
 
@@ -111,7 +100,7 @@ a {
 }
 
 .concert-image, .cf-create, .project-image {
-  max-width: 350px;
+  max-width: 300px;
 }
 
 #quickconcert, #nutrition {
@@ -167,6 +156,7 @@ a {
 }
 
 .interests-title, .interests-text {
+  margin-top: 20px;
   color: #a96851;
 }
 
@@ -200,9 +190,9 @@ a {
   border-radius: 1em;
 }
 
-/* //use min width to let larger screen css kick in */
+/* use min width to let larger screen css kick in */
 
-@media screen and (min-width: 575px) {
+/* @media screen and (min-width: 575px) {
   .bio-text-container {
     margin: 0 auto;
     max-width: 500px;
@@ -211,7 +201,7 @@ a {
   .card {
     display: block;
   }
-}
+} */
 footer {
   width: 100%;
   height: 35px;
@@ -221,34 +211,3 @@ footer {
   background-color: #5c4d4d;
   color: #f2f1e7;
 }
-
-@media screen and (min-width: 675px) {
-  .bio-section {
-    margin-top: 50px;
-    margin: 0 auto;
-  }
-
-  .bio-text-container {
-    overflow: auto;
-  }
-  .main-nav-link {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 760px) {
-  .bio-section {
-    display: flex;
-  }
-  .card {
-    width: 40%;
-    height: 40%;
-    padding: 15px;
-    margin-left: 10px;
-
-  }
-  bio-text {
-    float: right;
-  }
-}
-
